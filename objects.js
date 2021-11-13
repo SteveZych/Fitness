@@ -36,4 +36,4 @@ const exercises = {
     }
 };
 
-export default {exercises};
+export default {exercises, area};
