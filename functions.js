@@ -1,3 +1,6 @@
+import {exercises} from "objects.js";
+
+
 //Returns list of exercises by using chosen arguments to filter exercise object
 function sortExercises(...args){
     let exerciseList = "";
@@ -12,3 +15,7 @@ function sortExercises(...args){
     };
     return exerciseList;
 };
+
+//Create an addExercise() function to add html below current form
+
+export default {sortExercises};

@@ -13,13 +13,14 @@
 <main>
 <!--Exercise Pills-->
 <section>
-    <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Chest</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Back</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Shoulders</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Biceps</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Triceps</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Abs</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Legs</button>
+    <button id="chest" type="button" class="btn btn-outline-primary" data-bs-toggle="button" autocomplete="off">Chest</button>
+    <button id="back" type="button" class="btn btn-outline-primary" data-bs-toggle="button" autocomplete="off">Back</button>
+    <button id="shoulders" type="button" class="btn btn-outline-primary" data-bs-toggle="button" autocomplete="off">Shoulders</button>
+    <button id="biceps" type="button" class="btn btn-outline-primary" data-bs-toggle="button" autocomplete="off">Biceps</button>
+    <button id="triceps" type="button" class="btn btn-outline-primary" data-bs-toggle="button" autocomplete="off">Triceps</button>
+    <button id="abs" type="button" class="btn btn-outline-primary" data-bs-toggle="button" autocomplete="off">Abs</button>
+    <button id="legs" type="button" class="btn btn-outline-primary" data-bs-toggle="button" autocomplete="off">Legs</button>
+    <button type="button" class="btn btn-primary" onclick="filter()">Filter</button>
 </section>
 <!--List of Chosen Exercises-->
 
@@ -31,9 +32,7 @@
         <label for="sets">Sets</label>
         <input type="number" id="sets">
         <select id="exercises">
-          <% for (const key in exercises) {%>
-
-          <% }); %>
+      
         </select>
         <button type="submit">Submit</button>
         <button type="button" onclick="addExercise()">Add</button>

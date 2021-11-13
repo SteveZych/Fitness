@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var {exercises} = requre('./api');
+var {exercises} = require('./objects');
 
 
 // set the view engine to ejs
