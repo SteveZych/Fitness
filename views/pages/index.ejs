@@ -32,10 +32,12 @@
         <label for="sets">Sets</label>
         <input type="number" id="sets">
         <select id="exercises">
-      
+            <%for (const exercise of sortedExercises){%>
+            <option><%=exercise%></option>
+            <%};%>
         </select>
         <button type="submit">Submit</button>
-        <button type="button" onclick="addExercise()">Add</button>
+        <button type="button" onclick="//addExercise()">Add</button>
     </form>
 </section>
 </main>

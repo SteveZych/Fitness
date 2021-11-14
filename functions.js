@@ -4,7 +4,7 @@ import {area} from "dom.js";
 
 
 //Returns list of exercises by using chosen arguments to filter exercise object
-function sortExercises(...args){
+const sortedExercises = function sortExercises(...args){
     let exerciseList = "";
     for (const key in exercises){
         for (const arg of args){ 
@@ -26,7 +26,7 @@ function filter(){
             arguments.push(area[property]);
         };
     };
-    return sortExercises(arguments);
+    return sortedExercises.sortExercises(arguments);
 };
 
 
